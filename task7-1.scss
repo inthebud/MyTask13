@@ -1,0 +1,118 @@
+html{
+	font-size: 62.5%;
+}
+body,h1{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+
+.blue-box{
+	background-color:#29bde0;
+	color:white;
+}
+.white-box{
+	background-color:white;
+	border:solid 2px #e2e2e2;
+}
+$font-color-1:#a2a2a2;
+
+header{
+	height: 4.5rem;
+	width: 100%;
+	.headerIcon{
+		position: relative;
+		top:2rem;left: 1rem;
+		height: 1.3rem;
+		width:1.6rem;
+		background-image: url(images/01.png);
+		background-size: cover;
+	}
+}
+main{
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom:1rem;
+	text-align: center;
+	background-color: #f0f0f0;
+	.history{
+		display: flex;
+		margin:0 2rem 2rem 2rem;
+		font-size: 2.5rem;
+		color: $font-color-1;
+		line-height: 6rem;
+		justify-content: space-between;
+		white-space: nowrap;
+		.hisyoryText{
+			width: 100%;
+			overflow: hidden;
+		}
+		.historyIcon{
+			display: inline-block;
+			margin: 1.75rem 1rem;
+			height: 2.5rem;
+			width: 2rem;
+			vertical-align: middle;
+			background-image: url(images/02.png);
+			background-size: 1.5rem;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.options{
+		margin: 0 2rem 0 2rem;
+		padding-bottom:30rem;
+		overflow: hidden;
+		white-space: nowrap;
+		h1{
+			color: #fbb435;
+			font-size: 2.5rem;
+			line-height: 4.5rem;
+			border-bottom: solid #fbb435 0.1rem;
+		}
+		.option1{
+			display: block;
+			margin: 1rem 3rem;
+			line-height: 6.5rem;
+			background-color: #69d1e9;
+			font-size: 2rem;
+		}
+		.text1{
+			font-size: 2rem;
+			color: $font-color-1;
+			text-overflow:ellipsis;
+			white-space: nowrap;
+		}
+		.triangle{
+			position: relative;
+			float: right;
+			left:-1rem;
+			top: -19rem;
+			width: 0;
+		    height: 0;
+		    border-top: 2rem solid transparent;
+		    border-left: 1.5rem solid #fbb435;
+		    border-bottom: 2rem solid transparent;
+		}
+	}
+}
+.footer{
+	display: flex;
+	height: 1rem;
+	margin: 1rem 2rem;
+	justify-content: center;
+	text-align: center;
+	cursor: pointer;
+	div{
+		margin: 0 0.5rem;
+		height: 1rem;
+		width: 1rem;
+		border-radius: 50%;
+		background-color: #f0f0f0;
+		&:hover{
+	 		background-color: #69d1e9;
+ 		}
+	}
+}
